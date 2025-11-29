@@ -1,6 +1,6 @@
 # 💻 TEMPLATE LAPORAN PROYEK: PENGEMBANGAN WEB SERVER DAN APLIKASI SEDERHANA
 
-**Proyek:** [JUDUL PROYEK KELOMPOK KALIAN]
+**Proyek:** [PROYEK WEB SERVER OLS]
 
 Proyek ini dibuat untuk memenuhi tugas mata pelajaran **Administrasi Sistem Jaringan (ASJ)**, yang merupakan salah satu elemen Capaian Pembelajaran Konsentrasi Keahlian Teknik Komputer dan Jaringan (**CP KKTKJ**) pada program TJKT. Proyek ini berfokus pada implementasi layanan Web Server, konfigurasi PHP, dan pengamanan koneksi menggunakan SSL/HTTPS.
 
@@ -12,10 +12,11 @@ Proyek ini dibuat untuk memenuhi tugas mata pelajaran **Administrasi Sistem Jari
 
 | Peran | Nama Lengkap | Kelas |
 | :--- | :--- | :--- |
-| **Ketua Kelompok** | [Nama Lengkap Ketua] | [Kelas Kalian] |
-| Anggota 1 | [Nama Lengkap Anggota 1] | [Kelas Kalian] |
-| Anggota 2 | [Nama Lengkap Anggota 2] | [Kelas Kalian] |
-| **Nama Sekolah/Institusi** | [Nama Sekolah/Institusi Kalian] | |
+| **Ketua Kelompok** | [Bagus Fajri Giri Hidayat] | [XI TJKT 2] |
+| Anggota 1 | [Rafi Khazin Nugraha] | [XI TJKT 2] |
+| Anggota 2 | [Farish Syam Fairus] | [XI TJKT 2] |
+| Anggota 3 | [Tiara Srimaya] | [XI TJKT 2] |
+| **Nama Sekolah/Institusi** | [SMKN 1 SOREANG] | |
 
 #### 1.2. Spesifikasi Alat dan Bahan (Host) 🛠️
 
