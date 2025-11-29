@@ -1,42 +1,17 @@
 
-Menu Navigasi
-tugas_asj
-
-Kode
-Masalah
-tugas latihan asj
-
- 0 bintang
- 2 garpu
- 0 menonton
- 1 Branch
- 0 Tags
- Aktivitas
- Properti khusus
-Repositori publik
-kahiang/tugas_asj
-Nama	
-asfydien
-asfydien
-minggu lalu
-html
-minggu lalu
-README.md
-minggu lalu
-Navigasi file repositori
-README
-💻 TEMPLATE LAPORAN PROYEK: PENGEMBANGAN WEB SERVER DAN APLIKASI SEDERHANA
-Proyek: [JUDUL PROYEK KELOMPOK KALIAN]
+💻 LAPORAN PROYEK: PENGEMBANGAN WEB SERVER DAN APLIKASI SEDERHANA
+Proyek: [WEB SERVER OLS]
 
 Proyek ini dibuat untuk memenuhi tugas mata pelajaran Administrasi Sistem Jaringan (ASJ) , yang merupakan salah satu elemen Capaian Pembelajaran Konsentrasi Keahlian Teknik Komputer dan Jaringan ( CP KKTKJ ) pada program TJKT. Proyek ini fokus pada implementasi layanan Web Server, konfigurasi PHP, dan pengamanan koneksi menggunakan SSL/HTTPS.
 
 1. 👥 Informasi Kelompok dan Spesifikasi Lingkungan Praktik
 1.1. Informasi Kelompok
 Peran	Nama Lengkap	Kelas
-Ketua Kelompok	[Nama Lengkap Ketua]	[Kelas Kalian]
-Anggota 1	[Nama Lengkap Anggota 1]	[Kelas Kalian]
-Anggota 2	[Nama Lengkap Anggota 2]	[Kelas Kalian]
-Nama Sekolah/Institusi	[Nama Sekolah/Institusi Kalian]	
+Ketua Kelompok	[Bagus Fajri Giri Hidayat]	[XI TJKT 2]
+Anggota 1	[Rafi Khazin Nugraha]	[XI TJKT 2]
+Anggota 2	[Faris Syam Fairus]	[XI TJKT 2]
+Anggota 3	[Tiara Sri Maya]	[XI TJKT 2]
+Nama Sekolah/Institusi	[SMKN 1 SOREANG ]	
 1.2. Spesifikasi Alat dan Bahan (Host) 🛠️
 Komponen	Deskripsi / Versi
 Virtualisasi	[Versi VMware Workstation yang Digunakan, contoh: VMware Workstation 17 Pro]
@@ -51,7 +26,7 @@ Mesin Virtual RAM	[Jumlah RAM yang dikhususkan untuk VM, contoh: 2 GB]
 vCPU	[Jumlah Core CPU yang dikhususkan untuk VM, contoh: 2 Core]
 Web Server yang Dipilih	[Apache2 / Nginx / OpenLiteSpeed]
 Versi PHP yang Dipakai	[mod_php / php-fpm / lsphp]
-2. 📝 Dokumentasi Teknis dan Langkah-Langkah Pengerjaan
+3. 📝 Dokumentasi Teknis dan Langkah-Langkah Pengerjaan
 2.1. Persiapan Dasar (Debian Trixie di VMware)
 Melakukan update dan upgrade sistem.
 sudo apt update && sudo apt upgrade -y
