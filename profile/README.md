@@ -46,8 +46,7 @@ Proyek ini dibuat untuk memenuhi tugas mata pelajaran **Administrasi Sistem Jari
 
 1.  Melakukan *update* dan *upgrade* sistem.
     ```bash
-    Update sistem:
-apt update && apt upgrade
+    Update sistem: apt update && apt upgrade
     ```
 2.  Memastikan konfigurasi jaringan (Bridge/NAT/Host-Only) sudah benar.
 
@@ -57,7 +56,7 @@ Kami menggunakan **[OpenLiteSpeed]**. Berikut langkah-langkah utamanya:
 
 * **Instalasi:**
     ```bash
-    # [Tuliskan perintah instalasi Web Server Kalian, contoh: sudo apt install nginx -y]
+    # [ Update sistem: apt install openlitespeed]
     ```
 * **Konfigurasi Virtual Host/Server Block:**
     [Jelaskan secara singkat penyesuaian konfigurasi yang Kalian lakukan pada file utama, misalnya penentuan Document Root dan port.]
@@ -68,8 +67,7 @@ Kami menggunakan **[JENIS PHP:lsphp]** untuk mengintegrasikan PHP dengan *Web Se
 
 * **Instalasi PHP:**
     ```bash
-    # [Tuliskan perintah instalasi PHP dan modul yang dibutuhkan]
-    sudo apt install php-fpm php-mysql
+    # [ apt install lsphp84 lsphp84-mysql ]
     ```
 * **Integrasi:**
     [Jelaskan langkah-langkah integrasi antara PHP dengan Web Server yang Kalian pilih.]
@@ -80,7 +78,7 @@ Untuk mengaktifkan akses HTTPS, kami membuat *self-signed certificate*.
 
 1.  Membuat direktori untuk *certificate*.
 2.  Membuat *Key* dan *Certificate* menggunakan OpenSSL.
-3.  Memodifikasi konfigurasi *Web Server* untuk menggunakan port **443** dan menunjuk ke *certificate* yang telah dibuat, serta memastikan akses dapat dilakukan melalui `https://[IP_SERVER]`.
+3.  Memodifikasi konfigurasi *Web Server* untuk menggunakan port **443** dan menunjuk ke *certificate* yang telah dibuat, serta memastikan akses dapat dilakukan melalui `https://192.168.1.209`.
 
 ---
 
