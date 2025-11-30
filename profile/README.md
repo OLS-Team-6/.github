@@ -16,14 +16,14 @@ Proyek ini dibuat untuk memenuhi tugas mata pelajaran **Administrasi Sistem Jari
 | Anggota 1 | [Rafi Khazin Nugraha] | [XI TJKT 2] |
 | Anggota 2 | [Farish Syam Fairus] | [XI TJKT 2] |
 | Anggota 3 | [Tiara Srimaya] | [XI TJKT 2] |
-| **Nama Sekolah/Institusi** | [SMKN 1 SOREANG] | |
+| **Nama Sekolah/Institusi** | [SMKN 1 SOREANG] | | [XI TJKT 2]
 
 #### 1.2. Spesifikasi Alat dan Bahan (Host) 🛠️
 
 | Komponen | Deskripsi / Versi |
 | :--- | :--- |
-| **Virtualisasi** | [Versi VMware Workstation yang Digunakan, contoh: VMware Workstation 17 Pro] |
-| **Sistem Operasi Host** | [OS yang digunakan di laptop/PC utama, contoh: Windows 11 / macOS Sonoma] |
+| **Virtualisasi** | [Versi VMware Workstation yang Digunakan, VMware Workstation 17 Pro] |
+| **Sistem Operasi Host** | [OS yang digunakan di laptop, contoh: Windows 11] |
 | **RAM Host (Minimal)** | [RAM Minimal yang digunakan di Host, contoh: 8 GB] |
 | **CPU Host** | [Tuliskan jenis/seri CPU, contoh: Intel Core i5 Generasi ke-10] |
 
@@ -32,11 +32,11 @@ Proyek ini dibuat untuk memenuhi tugas mata pelajaran **Administrasi Sistem Jari
 | Spesifikasi | Detail |
 | :--- | :--- |
 | **Sistem Operasi Tamu (Guest OS)** | Debian Trixie (12.x) |
-| **Alamat IP Server** | `[Tuliskan Alamat IP Lokal Server]` |
+| **Alamat IP Server** | `[192.168.1.209]` |
 | **RAM VM** | [Jumlah RAM yang dialokasikan untuk VM, contoh: 2 GB] |
-| **vCPU** | [Jumlah Core CPU yang dialokasikan untuk VM, contoh: 2 Core] |
-| **Web Server yang Dipilih** | **[Apache2 / Nginx / OpenLiteSpeed]** |
-| **Versi PHP yang Dipakai** | **[mod_php / php-fpm / lsphp]** |
+| **vCPU** | [Jumlah Core CPU yang dialokasikan untuk VM, 2 Core] |
+| **Web Server yang Dipilih** | **[OpenLiteSpeed]** |
+| **Versi PHP yang Dipakai** | **[lsphp]** |
 
 ---
 
@@ -52,7 +52,7 @@ Proyek ini dibuat untuk memenuhi tugas mata pelajaran **Administrasi Sistem Jari
 
 #### 2.2. Instalasi dan Konfigurasi Web Server 🌐
 
-Kami menggunakan **[NAMA WEB SERVER]**. Berikut langkah-langkah utamanya:
+Kami menggunakan **[OpenLiteSpeed]**. Berikut langkah-langkah utamanya:
 
 * **Instalasi:**
     ```bash
@@ -63,7 +63,7 @@ Kami menggunakan **[NAMA WEB SERVER]**. Berikut langkah-langkah utamanya:
 
 #### 2.3. Konfigurasi PHP 🐘
 
-Kami menggunakan **[JENIS PHP: mod_php / php-fpm / lsphp]** untuk mengintegrasikan PHP dengan *Web Server*.
+Kami menggunakan **[JENIS PHP:lsphp]** untuk mengintegrasikan PHP dengan *Web Server*.
 
 * **Instalasi PHP:**
     ```bash
@@ -87,11 +87,11 @@ Untuk mengaktifkan akses HTTPS, kami membuat *self-signed certificate*.
 
 Berdasarkan pengalaman kami dalam proyek ini, berikut adalah analisis kelebihan dan kekurangan dari *Web Server* yang kami gunakan:
 
-| Aspek | Kelebihan ([NAMA WEB SERVER]) 👍 | Kekurangan ([NAMA WEB SERVER]) 👎 |
+| Aspek | Kelebihan ([OpenLiteSpeed]) 👍 | Kekurangan ([OpenLiteSpeed]) 👎 |
 | :--- | :--- | :--- |
-| **Performa & Kecepatan** | [Tuliskan kelebihannya.] | [Tuliskan kekurangannya.] |
-| **Kemudahan Konfigurasi**| [Tuliskan kelebihannya.] | [Tuliskan kekurangannya.] |
-| **Fitur & Modularitas** | [Tuliskan kelebihannya.] | [Tuliskan kekurangannya.] |
+| **Performa & Kecepatan** | [kelebihan Cepat dan ringan saat menangani banyak pengunjung. <br> - Tidak boros CPU dan RAM. <br> - Ada fitur cache bawaan yang bisa membuat website jauh lebih cepat.] | [kekurangan Kecepatannya baru maksimal kalau pengaturan cache benar. <br> - Bisa lambat kalau ada plugin atau setting yang salah.] |
+| **Kemudahan Konfigurasi**| [kelebihan Ada panel admin yang mudah dipakai lewat browser. <br> - Banyak setting siap pakai untuk WordPress, Laravel, dll. <br> - Instalasinya cukup gampang.] | [kekurangan Beberapa pengaturan baru aktif setelah restart. <br> - Dokumentasi kadang kurang jelas untuk pemula. <br> - Beberapa menu konfigurasi bisa membingungkan pengguna baru.] |
+| **Fitur & Modularitas** | [kelebihan Sudah mendukung HTTP/3 (lebih cepat untuk website modern). <br> - Cache bawaan sangat bagus untuk WordPress. <br> - Bisa pakai aturan .htaccess seperti di Apache.	] | [kekurangan Tidak sebanyak Nginx dalam pilihan modul. <br> - Fitur terbaik biasanya ada di versi berbayar (LiteSpeed Enterprise). <br> - Untuk aplikasi non-PHP kadang butuh setting tambahan.] |
 
 ---
 
@@ -99,14 +99,14 @@ Berdasarkan pengalaman kami dalam proyek ini, berikut adalah analisis kelebihan 
 
 #### 4.1. Kesan Selama Proses Pengerjaan ✨
 
-[Tuliskan kesan anggota kelompok, misalnya: "Kami merasa mendapatkan banyak ilmu baru, terutama dalam praktik Version Control menggunakan Git dan GitHub yang belum pernah kami lakukan sebelumnya."]
+[kesan anggota kelompok: "kami mendapakan banyak pengetahuan baru dari mulai cara membuat web server dan github sebagai sarana pembelajaran, menemukan solusi dari kegagalan dalam konfigurasi, itu adalah hal yang sangat memuaskan bagi kami."]
 
 #### 4.2. Kendala dan Solusi yang Diterapkan 💡
 
 | Kendala yang Kalian Hadapi 🚧 | Solusi yang Ditemukan ✅ |
 | :--- | :--- |
-| [Tuliskan kendala teknis atau kolaborasi lain yang Kalian hadapi.] | [Jelaskan solusi spesifik Kalian.] |
-
+| [kendala yang kami dapat yaitu terdapat pada device yang kami gunakan, cukup menghambat proses pengerjaan karena selalu ngeleg jika terlalu sering pindah pindah software, seperti berpindah dari vmware ke chrome lalu ke winscp] | [Jelaskan solusi spesifik Kalian.] |
+solusi yang kami lakukan yaitu dengan bersabar tidak terburu buru untuk berpindah dari software yang satu ke yang lain, dengan itu kami tetap bisa mengerjakan tugas dengan sedikit lancar
 ---
 
 ### 5. 📂 Dokumentasi Konten Website
@@ -122,5 +122,3 @@ Seluruh proses pengerjaan telah direkam dan diunggah ke YouTube.
 **Link Video YouTube:**
 
 [![Thumbnail Video Pengerjaan](https://img.youtube.com/vi/1-qlNtQS1OA/0.jpg)](https://www.youtube.com/watch?v=1-qlNtQS1OA)
-
-**PETUNJUK:** Ganti semua teks di dalam tanda kurung siku `[ ... ]` dengan informasi proyek yang relevan.
