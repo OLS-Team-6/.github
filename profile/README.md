@@ -48,17 +48,6 @@ Proyek ini dibuat untuk memenuhi tugas mata pelajaran **Administrasi Sistem Jari
     ```bash
     Update sistem:
 apt update && apt upgrade
-Pastikan aplikasi downloader sudah terpasang:
-apt install wget curl
-Tambahkan repository OpenLiteSpeed:
-wget -O - https://repo.litespeed.sh | bash
-Install OpenLiteSpeed:
-apt install openlitespeed
-Install PHP 8.4 + modul MySQL:
-apt install lsphp84 lsphp84-mysql
-Start dan aktifkan service:
-systemctl start lsws
-systemctl enable lsws
     ```
 2.  Memastikan konfigurasi jaringan (Bridge/NAT/Host-Only) sudah benar.
 
