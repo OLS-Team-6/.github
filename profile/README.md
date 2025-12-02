@@ -132,9 +132,8 @@ Berdasarkan pengalaman kami dalam proyek ini, berikut adalah analisis kelebihan 
 #### 4.2. Kendala dan Solusi yang Diterapkan 💡
 
 | Kendala yang Kalian Hadapi 🚧 | Solusi yang Ditemukan ✅ |
-| :--- | :--- |
-| [kendala yang kami dapat yaitu terdapat pada device yang kami gunakan, cukup menghambat proses pengerjaan karena selalu ngeleg jika terlalu sering pindah pindah software, seperti berpindah dari vmware ke chrome lalu ke winscp] | [
-solusi yang kami lakukan yaitu dengan bersabar tidak terburu buru untuk berpindah dari software yang satu ke yang lain, dengan itu kami tetap bisa mengerjakan tugas dengan sedikit lancar] |
+| --- | --- |
+| kendala yang kami dapat yaitu terdapat pada device yang kami gunakan, cukup menghambat proses pengerjaan karena selalu ngeleg jika terlalu sering pindah pindah software, seperti berpindah dari vmware ke chrome lalu ke winscp | solusi yang kami lakukan yaitu dengan bersabar tidak terburu buru untuk berpindah dari software yang satu ke yang lain, dengan itu kami tetap bisa mengerjakan tugas dengan sedikit lancar |
 ---
 
 ### 5. 📂 Dokumentasi Konten Website
