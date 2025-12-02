@@ -23,9 +23,9 @@ Proyek ini dibuat untuk memenuhi tugas mata pelajaran **Administrasi Sistem Jari
 | Komponen | Deskripsi / Versi |
 | :--- | :--- |
 | **Virtualisasi** | [Versi VMware Workstation yang Digunakan, VMware Workstation 17 Pro] |
-| **Sistem Operasi Host** | [OS yang digunakan di laptop, contoh: Windows 11] |
-| **RAM Host (Minimal)** | [RAM Minimal yang digunakan di Host, contoh: 8 GB] |
-| **CPU Host** | [Tuliskan jenis/seri CPU, contoh: Intel Core i5 Generasi ke-10] |
+| **Sistem Operasi Host** | [OS yang digunakan di laptop, Windows 11] |
+| **RAM Host (Minimal)** | [RAM Minimal yang digunakan di Host, 8 GB] |
+| **CPU Host** | [Tuliskan jenis/seri CPU, Intel Celeron] |
 
 #### 1.3. Spesifikasi Server Virtual (VM) 🖥️
 
@@ -33,7 +33,7 @@ Proyek ini dibuat untuk memenuhi tugas mata pelajaran **Administrasi Sistem Jari
 | :--- | :--- |
 | **Sistem Operasi Tamu (Guest OS)** | Debian Trixie (12.x) |
 | **Alamat IP Server** | `[192.168.1.209]` |
-| **RAM VM** | [Jumlah RAM yang dialokasikan untuk VM, contoh: 2 GB] |
+| **RAM VM** | [Jumlah RAM yang dialokasikan untuk VM, 2 GB] |
 | **vCPU** | [Jumlah Core CPU yang dialokasikan untuk VM, 2 Core] |
 | **Web Server yang Dipilih** | **[OpenLiteSpeed]** |
 | **Versi PHP yang Dipakai** | **[lsphp]** |
@@ -59,7 +59,14 @@ Kami menggunakan **[OpenLiteSpeed]**. Berikut langkah-langkah utamanya:
     # [ Update sistem: apt install openlitespeed]
     ```
 * **Konfigurasi Virtual Host/Server Block:**
-    [Jelaskan secara singkat penyesuaian konfigurasi yang Kalian lakukan pada file utama, misalnya penentuan Document Root dan port.]
+    [MENGUBAH PORT
+  Login ke panel admin (http://ip-server:7080)
+Masuk ke Menu → Listeners → Default → Edit
+Ganti Port: 80
+Klik Save → Graceful Restart
+Sekarang akses website di browser: 👉 http://ip-server
+TEMPAT DOKUMEN ROOT
+/usr/local/lsws/Example/]
 
 #### 2.3. Konfigurasi PHP 🐘
 
@@ -70,7 +77,29 @@ Kami menggunakan **[JENIS PHP:lsphp]** untuk mengintegrasikan PHP dengan *Web Se
     # [ apt install lsphp84 lsphp84-mysql ]
     ```
 * **Integrasi:**
-    [Jelaskan langkah-langkah integrasi antara PHP dengan Web Server yang Kalian pilih.]
+    [Pastikah lsphp84 sudah terinstal, untuk merubahnya ikuti tahapan beriku:
+
+Di menu kiri pilih: Server Configuration → External App
+Klik Add → pilih LiteSpeed SAPI App → Next
+Isi:
+Name: lsphp84
+Address: uds://tmp/lshttpd/lsphp.sock
+Notes: PHP 8.4
+Max Connections: 35
+Initial Request Timeout: 60
+Retry Timeout: 0
+Persistent Connection: Yes
+Command: /usr/local/lsws/lsphp84/bin/lsphp
+Instances: 1 (default)
+Save → Graceful Restart
+
+Atur Script Handler
+Masih di menu kiri: Server Configuration → Script Handler
+Edit handler lsphp atau buat baru:
+Suffixes: php
+Handler Type: LiteSpeed SAPI
+Handler Name: lsphp84
+Save → Graceful Restart]
 
 #### 2.4. Implementasi SSL (HTTPS) 🔒
 
@@ -121,6 +150,3 @@ Seluruh proses pengerjaan telah direkam dan diunggah ke YouTube.
 **Link Video YouTube:**
 
 [![Thumbnail Video Pengerjaan](https://img.youtube.com/vi/TValzUfbrZg/maxresdefault.jpg)](https://youtu.be/TValzUfbrZg?si=TUwXVTdGjFV6Ks4x)
-
-
-(https://img.youtube.com/vi/1-qlNtQS1OA/0.jpg)](https://www.youtube.com/watch?v=1-qlNtQS1OA)
