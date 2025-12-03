@@ -138,9 +138,7 @@ Berdasarkan pengalaman kami dalam proyek ini, berikut adalah analisis kelebihan 
 
 ### 5. 📂 Dokumentasi Konten Website
 
-Seluruh *source code* (Halaman Utama dan Halaman Profil) yang berada di *document root* server telah disalin dan di-*commit* ke dalam folder `/html` di *repository* GitHub ini.
-
----
+<img src="images/web.jpg">
 
 ### 6. 🎬 Dokumentasi Video Pengerjaan
 
